@@ -1,0 +1,300 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Belanosima:wght@400;600;700&display=swap');
+@import url('https://css.gg/css?=|facebook');
+@import url('https://css.gg/css?=|instagram');
+
+* {
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+    padding: 0;
+    color: #ECECEC;
+    text-align: center;
+}
+
+body, html {
+    height: 100vh;
+    overflow: hidden;
+  }
+  
+body {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+}
+  
+.bg {
+    background-image: url('../images/Background.png');
+    height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+  }
+
+.title-container {
+    position: relative;
+    padding-top: 10vh;
+}
+
+#title {
+    font-size: 3.5rem;
+    position: relative;
+    margin: 0;
+}
+
+#subtitle {
+    font-size: 1.3rem;
+    padding-top: 5px;
+    margin: 0;
+}
+
+#dev-logo {
+
+    display: none;
+
+}
+
+.table {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 0;
+}
+
+.table-img{
+    width: 480px;
+}
+
+.options-container {
+    display: none;
+    margin-top: -67%;
+    padding-bottom: 30px;
+}
+
+.chevron-left{
+    margin: 0 auto;
+    cursor: pointer;
+    display: inline-block;
+    padding-right: 5px;
+    font-size: 3.5rem;
+    font-family: 'Belanosima', sans-serif;
+    font-weight: 400;
+}
+
+#option-title{
+    display: inline-block;
+    margin: 0 auto;
+    font-size: 2.5rem;
+}
+
+.chevron-right{
+    margin: 0 auto;
+    cursor: pointer;
+    display: inline-block;
+    padding-left: 5px;
+    font-size: 3.5rem;
+    font-family: 'Belanosima', sans-serif;
+    font-weight: 400;
+}
+ 
+  #btn-submit {
+    display: none;
+      cursor: pointer;
+      position: relative;
+      padding: 15px 70px;
+      border-radius: 7px;
+      border: 1px solid rgb(61, 106, 255);
+      font-size: 1rem;
+      text-transform: uppercase;
+      font-weight: 600;
+      letter-spacing: 2px;
+    background: transparent;
+    color: #fff;
+    overflow: hidden;
+    box-shadow: 0 0 0 0 transparent;
+    -webkit-transition: all 0.2s ease-in;
+    -moz-transition: all 0.2s ease-in;
+    transition: all 0.2s ease-in;
+  }
+  
+  #btn-submit:hover {
+    background: rgb(61, 106, 255);
+    box-shadow: 0 0 30px 5px rgba(0, 142, 236, 0.815);
+    -webkit-transition: all 0.2s ease-out;
+    -moz-transition: all 0.2s ease-out;
+    transition: all 0.2s ease-out;
+}
+
+#btn-submit:hover::before {
+    -webkit-animation: sh02 0.5s 0s linear;
+    -moz-animation: sh02 0.5s 0s linear;
+    animation: sh02 0.5s 0s linear;
+}
+
+#btn-submit::before {
+    content: '';
+    display: block;
+    width: 0px;
+    height: 86%;
+    position: absolute;
+    top: 7%;
+    left: 0%;
+    opacity: 0;
+    background: #fff;
+    box-shadow: 0 0 50px 30px #fff;
+    -webkit-transform: skewX(-20deg);
+    -moz-transform: skewX(-20deg);
+    -ms-transform: skewX(-20deg);
+    -o-transform: skewX(-20deg);
+    transform: skewX(-20deg);
+}
+
+@keyframes sh02 {
+    from {
+        opacity: 0;
+        left: 0%;
+    }
+    
+    50% {
+        opacity: 1;
+    }
+    
+    to {
+        opacity: 0;
+        left: 100%;
+    }
+}
+
+#btn-submit:active {
+    box-shadow: 0 0 0 0 transparent;
+    -webkit-transition: box-shadow 0.2s ease-in;
+    -moz-transition: box-shadow 0.2s ease-in;
+    transition: box-shadow 0.2s ease-in;
+}
+
+.gg-instagram{
+    cursor: pointer;
+    display: inline-block;
+    margin-left: -20px;
+    position: fixed;
+    bottom: 12vh;
+}
+
+.gg-facebook{
+    cursor: pointer;
+    display: inline-block;
+    margin-left: 20px;
+    position: fixed;
+    bottom: 12vh;
+}
+
+.gg-instagram:hover {
+
+    filter: brightness(50%)
+
+}
+
+.gg-facebook:hover{
+
+    filter: brightness(50%)
+
+}
+
+
+@media screen and (min-width: 1281px) {
+    .title-container {
+        padding-top: 8vh;
+    }
+
+
+    #title {
+        font-size: 3.5rem;
+    }
+
+    #subtitle {
+        font-size: 1.3rem;
+    }
+
+    .table {
+        padding-top: 80px;
+    }
+
+    .gg-instagram {
+
+        margin-bottom: -8vh;
+
+    }
+
+    .gg-facebook {
+
+        margin-bottom: -7.9vh;
+
+    }
+}
+
+
+@media screen and (min-width: 481px) and (max-width: 1400px) {
+
+    .title {
+
+        color: black;
+
+    }
+
+    .table {
+
+        margin-top: -40px;
+
+    }
+
+    .gg-instagram {
+
+        bottom: 22vh;
+
+    } 
+    
+    .gg-facebook {
+
+        bottom: 22vh;
+
+    }
+
+  }
+
+@media screen and (max-width: 480px) {
+
+    #title {
+
+        display: none;
+
+    }
+
+    #dev-logo {
+
+        display: block;
+        max-width: 280px;
+        margin-top: -10.5vh;
+        margin-left: 7.5vh;
+
+    }
+
+    .table {
+        margin-top: -48px;
+    }
+
+    .gg-instagram {
+
+        bottom: 20vh;
+
+    } 
+    
+    .gg-facebook {
+
+        bottom: 20vh;
+
+    }
+
+}

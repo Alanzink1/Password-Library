@@ -5,11 +5,95 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Password Library</title>
     <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/styleCreate.css">
+    <link rel="stylesheet" href="../css/styleCreateFinal.css">
+    <link rel="stylesheet" href="../css/styleSearch.css">
+    <link rel="stylesheet" href="../css/styleDelete.css">
+    <link rel="stylesheet" href="../css/styleResult.css">
+
 </head>
 <body>
+    <div class="bg">
+        <div class="title-container">
+            <h1 id="title">Password Library</h1>
+            <img id="dev-logo" src="../images/logoDevWartech.png" alt="">
+            <h4 id="subtitle"><em>By Dev Wartech</em></h4>
+        </div>
 
-    <h1>Hello World!</h1>
+        <div class="table">
+            <img class="table-img" src="../images/table.png" alt="">
+            <div class="options-container">
+                <p class="chevron-left"><</p>
+                <h2 id="option-title">Create</h2>
+                <p class="chevron-right">></p>
+            </div>
+            <div class="form-container">
+                <div class="create">
+                    <div class="create-container">
+                        <input class="form-item-create" type="text" placeholder="Item Name">
+                    </div>
+                </div>
+                <div class="create-final">
+                    <div class="email-container">
+                        <input class="form-email-username" type="text" placeholder="Email or Username">
+                    </div>
+                    <div class="password-container">
+                        <input class="form-password" type="password" placeholder="Password">
+                    </div>
+                </div>
+                <div class="search">
+                    <div class="search-container">
+                        <input class="form-search" type="text" placeholder="Item Name">
+                    </div>
+                </div>
+                <div class="delete">
+                    <div class="delete-container">
+                        <input class="form-delete" type="text" placeholder="Item Name">
+                    </div>
+                </div>
+                <div class="result">
+                    <div class="result-container">
+                        <h2 id="result-title">Minecraft</h2>
+                        <img src="../images/return.svg" class="return-img" alt="Return">
+                        <img src="../images/minecraft-icon.png" class="item-icon" width="50px" alt="">
+                        <p id="icon-p">Icon</p>
+                        <div class="email-username-content">
+                            <p id="email-username-p">Email or Username</p>
+                            <div class="email-username-container">
+                                <h4 id="email-username">AlanTeste@gmail.com</h4>
+                                <div class="edit-container">
+                                    <img src="../images/edit-icon.svg" id="edit-icon-email" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="password-content">
+                            <p id="password-p">Password</p>
+                            <div class="password-container">
+                                <h4 id="password">AlanSenha123</h4>
+                                <img src="../images/edit-icon.svg" id="edit-icon-password" alt="">
+                            </div>
+                        </div>
+                        <h2 id="dev-wartech">@wartech_dev</h2>
+
+                    </div>
+                </div>
+                    <button id="btn-submit">Search</button>
+
+            </div>
+            
+        </div>
+        <footer>
+            <div class="social-media">
+                <i class="gg-instagram"></i>
+                <i class="gg-facebook"></i>
+            </div>
+        </footer>
+    </div>
 
     <script src="../js/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
 </body>
 </html>
+
+<!-- 
+<a href="http://www.onlinewebfonts.com">oNline Web Fonts</a> -->

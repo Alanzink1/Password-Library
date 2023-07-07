@@ -1,0 +1,33 @@
+.form-container{
+    padding-top: -10px;
+}
+
+.form-item-create{
+    font-size: 1rem;
+    background-color: #212121;
+    width: 320px;
+    height: 30px;
+    padding: 10px;
+    /* text-align: center; */
+    border: 2px solid white;
+    border-radius: 5px;
+    /* box-shadow: 3px 3px 2px rgb(249, 255, 85); */
+    margin-top: 20px;
+    margin-bottom: 40px;
+
+}
+
+.form-item-create:focus {
+    color: rgb(0, 255, 255);
+    background-color: #212121;
+    outline-color: rgb(0, 255, 255);
+    box-shadow: -3px -3px 15px rgb(0, 255, 255);
+    transition: .1s;
+    transition-property: box-shadow;
+  }
+
+.create {
+
+    display: none;
+
+}

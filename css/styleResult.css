@@ -1,0 +1,134 @@
+.result {
+    margin-top: -20vh;
+}
+
+.result-container {
+
+}
+
+
+#result-title {
+    position: absolute;
+    top: 16vh;
+    left: 22vh;
+    font-size: 2.2rem;
+}
+
+
+.return-img {
+    cursor: pointer;
+    position: absolute;
+    top: 16vh;
+    left: 4vh;
+    width: 45px;
+    filter: invert(100%);
+    transform: rotate(3.142rad);
+    -webkit-transform: scaleY(-1);
+    transform: scaleY(-1);
+}
+
+.return-img:hover{
+
+    filter: invert(50%)
+
+}
+
+
+.item-icon {
+    position: absolute;
+    max-width: 50px;
+    top: 15vh;
+    left: 58vh;
+}
+
+
+#icon-p {
+    position: absolute;
+    font-size: 1.2rem;
+    top: 23vh;
+    left: 58.5vh;
+}
+
+
+#email-username-p {
+    position: absolute;
+    color: hsl(95, 46%, 45%);
+    font-size: 0.8rem;
+    top: 30vh;
+    left: 8vh;
+}
+
+
+#email-username {
+    position: absolute;
+    font-size: 1.3rem;
+    top: 32vh;
+    left: 8vh;
+}
+
+
+#edit-icon-email {
+    cursor: pointer;
+    position: absolute;
+    filter: invert(100%);
+    top: 33vh;
+    left: 45vh;
+    width: 15px;
+}
+
+#edit-icon-email:hover{
+
+    filter: invert(50%)
+
+}
+
+.edit-container {
+    margin-top: 80px;
+
+}
+
+.email-username-container {
+
+    display: inline-block;
+
+}
+
+#password-p {
+    position: absolute;
+    color: #C42222;
+    font-size: 0.8rem;
+    top: 39vh;
+    left: 8vh;
+}
+
+
+#password {
+    position: absolute;
+    font-size: 1.3rem;
+    top: 41.5vh;
+    left: 8vh;
+}
+
+
+#edit-icon-password {
+    cursor: pointer;
+    position: absolute;
+    filter: invert(100%);
+    top: 42.5vh;
+    left: 32vh;
+    width: 15px;
+}
+
+#edit-icon-password:hover{
+
+    filter: invert(50%)
+
+}
+
+#dev-wartech {
+    position: absolute;
+    color: #C4BDBD;
+    top: 52vh;
+    left: 22vh;
+}
+
